@@ -1,6 +1,8 @@
 /* rafc - rfc  */ 
 
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 /* Outputting dynamic values em React é quando você muda algum valor (state) e o React mostra isso na tela automaticamente. */
 
@@ -17,7 +19,9 @@ function Post(props)  {
   return (
     <div>
         <h1> {props.author} </h1>
-        <p> {props.text}  </p>
+        <Link to="/dynamic-values"> { props.text } </Link>
+        
+         
         
         
         {
