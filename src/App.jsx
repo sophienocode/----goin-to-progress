@@ -5,7 +5,6 @@ function App() {
 
   return (
     <>
-      <h1>Hello WebSite</h1>
       < Post />
      
     </>
