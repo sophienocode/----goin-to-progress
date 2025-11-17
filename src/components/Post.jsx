@@ -1,5 +1,7 @@
 /* rafc - rfc  */ 
 
+import classes from './Post.module.css'; 
+
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
@@ -8,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 // const names =  [ 'React fundamentals', 'Fundamentals' ];
 
-function Post(props)  {
+function Post({author, text, link})  {
 
     /* 
     const chosenName = Math.random() > 0.5 ? names[0] : names[1];
@@ -17,9 +19,10 @@ function Post(props)  {
     */
 
   return (
-    <div>
-        <h1> {props.author} </h1>
-        <Link to="/dynamic-values"> { props.text } </Link>
+    <div className={classes.post}>
+        <h1 className={classes.author} > {author} </h1>
+        <Link to={link} className={classes.text} > { text } </Link>
+        
         
          
         
