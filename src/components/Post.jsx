@@ -2,7 +2,7 @@
 
 import classes from './Post.module.css'; 
 
-import React, { useState } from 'react'
+
 import { Link } from 'react-router-dom';
 
 
@@ -19,6 +19,7 @@ function Post({author, text, link})  {
     */
 
   return (
+    <>
     <div className={classes.post}>
         <h1 className={classes.author} > {author} </h1>
         <Link to={link} className={classes.text} > { text } </Link>
@@ -36,6 +37,7 @@ function Post({author, text, link})  {
         */}
         
     </div>
+    </>
   )
 }
 
